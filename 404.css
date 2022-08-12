@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 12pt;
+  font-weight: 400;
+  color: black;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+  background: rgb(211, 85, 85);
+  margin: 0;
+  padding: 0;
+}
+
+.a404 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 250px;
+  max-width: 400px;
+  max-height: 250px;
+  background: linear-gradient(
+    35deg,
+    white 0%,
+    white 84.7%,
+    rgb(211, 85, 85) 85%,
+    rgb(211, 85, 85) 91%,
+    white 91.3%
+  );
+  box-shadow: 0 10px 60px 0 rgb(211, 0, 0), inset 0px -10px 17px 2px rgb(211, 85, 85);
+  border-radius: 25px;
+  z-index: -1;
+}
+
+.a404::before {
+  position: absolute;
+  backdrop-filter: blur(5px);
+  bottom: -20px;
+  right: -20px;
+  width: 70px;
+  height: 70px;
+  content: "";
+  border-radius: 200px;
+  background: #ffffff66;
+  box-shadow: 0 10px 25px 0 rgb(211, 0, 0), inset 0px -8px 15px 0px rgb(128, 0, 0);
+  border: 0.1px solid transparent;
+}
+
+.center{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 80%;
+    height: 80%;
+    
+}
+
+.main-content{
+    position: fixed;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items:center;
+}
+
+.a404 > p {
+  position: relative;
+  right: 5px;
+  font-size: 34pt;
+  font-weight: 900;
+  margin: 0;
+  padding: 20px 35px 10px 25px;
+  line-height: 36pt;
+  text-align: center;
+  color: #490d0d;
+  align-self: center;
+  order: 2;
+}
+
+.a404 > p > span {
+  position: absolute;
+  bottom: 4px;
+  left: 45px;
+  width: 55%;
+  height: 20px;
+  background: rgb(211, 85, 85);
+  content: "";
+  z-index: -1;
+}
+
+.a404 > p > i {
+  color: white;
+  text-shadow: 1px 1px 0px rgb(211, 85, 85), 2px 2px 0px rgb(211, 85, 85),
+    3px 3px 0px rgb(211, 85, 85), -1px -1px 0px rgb(211, 85, 85);
+}
+
+
+.header{
+    width: 100%;
+}
+
+.a404::after {
+  backdrop-filter: blur(5px);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-left: 20px;
+  padding-bottom: 28px;
+  top: -35px;
+  left: -23px;
+  width: 50%;
+  height: 50%;
+  background: #ffffff55;
+  content: "404 + Could'nt find go to home page";
+  text-align: center;
+  color: #4a0d0d;
+  line-height: 16pt;
+  font-weight: 700;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px 0 rgb(211, 85, 85), inset 0px -10px 20px 0px #d35555bb;
+  border: 0.1px solid transparent;
+}
+
+.a404 > .a404 {
+  all: unset;
+  position: relative;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 35px 0px 40px 30px;
+  border-radius: 15px;
+
+  background-size: cover;
+  background-position: center;
+  border: 0.1px solid rgb(211, 85, 85);
+  z-index: -1;
+}
+
+.a404 > .a404::before {
+  all: unset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgb(211, 85, 85);
+  mix-blend-mode: color;
+  border-radius: 15px;
+}
+
+.a404 > .a404::after {
+  all: unset;
+}
